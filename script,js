@@ -1,0 +1,44 @@
+// Form submission alert
+document.querySelector('.execute-btn')?.addEventListener('click', function() {
+    const name = document.querySelector('.form-group input[placeholder="John Doe"]')?.value;
+    const email = document.querySelector('.form-group input[placeholder="john@example.com"]')?.value;
+    const message = document.querySelector('.form-group textarea')?.value;
+    
+    if(name && email && message) {
+        alert(`📨 Message sent!\n\nName: ${name}\nEmail: ${email}\nMessage: ${message}\n\nI'll get back to you soon!`);
+    } else {
+        alert('⚠️ Please fill all fields before sending.');
+    }
+});
+
+// Smooth scroll for navigation
+document.querySelectorAll('.nav-links a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const target = document.querySelector(targetId);
+        if(target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+});
+
+// Animate skill bars on scroll
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting) {
+            const bars = entry.target.querySelectorAll('.fill');
+            bars.forEach(bar => {
+                const width = bar.style.width;
+                bar.style.width = '0';
+                setTimeout(() => {
+                    bar.style.width = width;
+                }, 100);
+            });
+            observer.unobserve(entry.target);
+        }
+    });
+});
+
+const skillsSection = document.querySelector('.skills-container');
+if(skillsSection) observer.observe(skillsSection);
