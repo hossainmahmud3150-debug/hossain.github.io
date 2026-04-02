@@ -1,16 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-    <title>Portfolio</title>
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hossain Mahmud | Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div class="terminal-container">
+        <!-- Header / Navigation -->
+        <nav class="navbar">
+            <div class="logo">ROOT@SYS</div>
+            <div class="nav-links">
+                <a href="#about">/About</a>
+                <a href="#services">/Services</a>
+                <a href="#skills">/Skills</a>
+                <a href="#projects">/Projects</a>
+                <a href="#contact">/Contact</a>
+            </div>
+            <div class="status">Status: <span class="online">Online</span></div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero" id="about">
+            <div class="hero-content">
+                <div class="init-text">INIT_CONN(C)</div>
+                <div class="status-badge">Status: Online</div>
+                <h1>Hello, World. I am <span class="highlight">Hossain Mahmud</span></h1>
+                <div class="terminal-lines">
+                    <p>$ Bui</p>
+                    <p>[EXECUTE ./WORK]</p>
+                    <p>[PING ME]</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <h2 class="section-title"><span class="hash">#</span> 01. About_Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="quote">> Passionate Web Developer building modern, responsive, professional websites and web applications.</p>
+                    <p>I specialize in both Frontend and Backend development, operating in the shadows to craft seamless digital experiences that run with terminal-like efficiency.</p>
+                    <p>Whether it's a glowing neon UI or a complex data pipeline, I engineer solutions that are fast, secure, and visually unforgettable.</p>
+                    
+                    <div class="code-block">
+                        <p>root@sys:~$ cat profile.json</p>
+                        <pre>{
+    "class": "Full Stack Developer",
+    "focus": ["Web Apps", "APIs", "Bots"],
+    "fuel": "Caffeine & Dark Mode"
+}</pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services" id="services">
+            <h2 class="section-title"><span class="hash">#</span> 02. Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Modern Portfolio Design</h3>
+                    <p>Sleek, cinematic presentation sites that leave a lasting impression.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Telegram Bot Development</h3>
+                    <p>Automated scripts and interactive bots for Telegram ecosystems.</p>
+                </div>
+                <div class="service-card">
+                    <h3>REST API Development</h3>
+                    <p>Robust, secure backend services and endpoints for web consumption.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Database Integration</h3>
+                    <p>MongoDB schemas, models, and fast data retrieval architectures.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Responsive UI/UX</h3>
+                    <p>Interfaces that adapt flawlessly across all devices and screen sizes.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Full Stack Web Apps</h3>
+                    <p>End-to-end development bridging interactive frontends with powerful backends.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills" id="skills">
+            <h2 class="section-title"><span class="hash">#</span> 03. System_Specs</h2>
+            <div class="skills-container">
+                <div class="skills-bars">
+                    <div class="skill"><span>HTML/CSS/JS</span><span>95%</span><div class="bar"><div class="fill" style="width:95%"></div></div></div>
+                    <div class="skill"><span>React.js</span><span>90%</span><div class="bar"><div class="fill" style="width:90%"></div></div></div>
+                    <div class="skill"><span>Node.js & Express</span><span>85%</span><div class="bar"><div class="fill" style="width:85%"></div></div></div>
+                    <div class="skill"><span>MongoDB</span><span>80%</span><div class="bar"><div class="fill" style="width:80%"></div></div></div>
+                    <div class="skill"><span>API Integration</span><span>90%</span><div class="bar"><div class="fill" style="width:90%"></div></div></div>
+                    <div class="skill"><span>UI/UX & Animations</span><span>85%</span><div class="bar"><div class="fill" style="width:85%"></div></div></div>
+                </div>
+                <div class="tech-stack">
+                    <span>Git</span><span>Linux</span><span>Docker</span><span>PostgreSQL</span><span>TypeScript</span><span>TailwindCSS</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects" id="projects">
+            <h2 class="section-title"><span class="hash">#</span> 04. Executables</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Web Application — Portfolio CMS Generator</h3>
+                    <p>A full-stack application that allows users to generate and host their own customizable portfolios.</p>
+                    <div class="tech-tags">React • Node.js • Express • MongoDB</div>
+                </div>
+                <div class="project-card">
+                    <h3>Backend API — Secure Contact Form API</h3>
+                    <p>A headless REST API service for handling contact form submissions with spam protection.</p>
+                    <div class="tech-tags">Express • MongoDB • Nodemailer</div>
+                </div>
+                <div class="project-card">
+                    <h3>Automation Bot — Telegram Crypto Tracker Bot</h3>
+                    <p>Tracks crypto prices, sends alerts for dips/spikes, and manages virtual portfolio.</p>
+                    <div class="tech-tags">Node.js • Telegraf • REST APIs</div>
+                </div>
+                <div class="project-card">
+                    <h3>Frontend UI — Admin Dashboard Interface</h3>
+                    <p>Cinematic, dark-themed admin dashboard for managing users and tracking metrics.</p>
+                    <div class="tech-tags">React • TailwindCSS • Recharts</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hire Section -->
+        <section class="hire">
+            <h2>Available For Hire</h2>
+            <p>I offer freelance services on platforms like Fiverr and Upwork. Need a custom site, bot, or backend? Let's negotiate a contract.</p>
+            <div class="hire-buttons">
+                <a href="#" class="btn-upwork">HIRE ON UPWORK</a>
+                <a href="#" class="btn-fiverr">HIRE ON FIVERR</a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <h2 class="section-title"><span class="hash">#</span> 05. What's Next? <span class="inline">Got_In_Touch</span></h2>
+            <div class="contact-content">
+                <p>Feel free to contact me for any project or collaboration opportunities. My inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                
+                <div class="contact-form">
+                    <div class="form-header">send_message.sh</div>
+                    <div class="form-group">
+                        <label>VAR NAME=</label>
+                        <input type="text" placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label>VAR EMAIL =</label>
+                        <input type="email" placeholder="john@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label>VAR MESSAGE=</label>
+                        <textarea placeholder="Hello, I'd like to discuss a project..."></textarea>
+                    </div>
+                    <button class="execute-btn">EXECUTE</button>
+                </div>
+
+                <!-- Contact Icons / Social Links -->
+                <div class="contact-links">
+                    <a href="mailto:hossainmahmud523@gmail.com" class="contact-icon email">
+                        <i class="fas fa-envelope"></i>
+                        <span>hossainmahmud523@gmail.com</span>
+                    </a>
+                    <a href="https://t.me/Cyperxploit" target="_blank" class="contact-icon telegram">
+                        <i class="fab fa-telegram-plane"></i>
+                        <span>@Cyperxploit</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2026 Hossain Mahmud | Built with ☕ and Terminal Vibe</p>
+        </footer>
+    </div>
+</body>
 </html>
